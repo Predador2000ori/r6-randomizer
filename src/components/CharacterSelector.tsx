@@ -52,4 +52,31 @@ const CharacterSelector: React.FC = () => {
 	);
 };
 
-export default CharacterSelector;
+const CharacterSelectorSquad: React.FC = () => {
+	const [selectedCharacters, setSelectedCharacters] = useState<any>([]);
+
+	const getUniqueRandomCharacters = (characters: any[], count: number) => {
+		const shuffled = [...characters].sort(() => 0.5 - Math.random());
+		return shuffled.slice(0, count);
+	};
+
+	const handleSelectCharacters = (characterType: 'attacker' | 'defender') => {
+		const characterList = characterType  === 'attacker' ? attackers : defenders;
+		const uniqueCharacters = getUniqueRandomCharacters(characterList, 5);
+		setSelectedCharacters(uniqueCharacters);
+	};
+
+	return (
+		<div>
+			<button onClick={() => handleSelectCharacters('attacker')}>Select 5 random attackers</button>
+			<button onClick={() => handleSelectCharacters('defender')}>Select 5 random defenders</button>
+			<div>
+				{selectedCharacters.map((character: any, index: number) => (
+					<CharacterCard key={index} {...character} />
+				))}
+			</div>
+		</div>
+	)
+}
+
+export default CharacterSelectorSquad;
