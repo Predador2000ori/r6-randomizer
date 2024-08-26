@@ -1,10 +1,19 @@
 import React, { useState } from "react";
-import CharacterCard from "./CharacterCard";
+import CharacterCard, {CharacterCardProps} from "./CharacterCard";
 import { attackers, defenders } from "../data/charactersData";
 
 const CharacterSelectorSquad: React.FC = () => {
 	// selected character state
-	const [selectedCharacters, setSelectedCharacters] = useState<any>([]);
+	const [selectedCharacters, setSelectedCharacters] = useState<CharacterCardProps[]>([{
+		name: "unknown",
+		imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Image_is_needed_male.svg/220px-Image_is_needed_male.svg.png",
+		weapons: {
+			primaryWeapon: ["unknown"],
+			secondaryWeapon: ["unknown"],
+		},
+		hability: ["unknown"],
+		gadget: ["unknown"],
+	}]);
 
 	// Logic to random character selection
 	// Function to return random element from array
@@ -49,13 +58,16 @@ const CharacterSelectorSquad: React.FC = () => {
 			<p>
 				<label htmlFor="Quantity" >Quantity:</label>
 				<br />
-				<input type="number" id="count" name="count" min="1"/>
+				<input type="number" id="count" name="count" min="1" max="10" defaultValue="1" style={{ width: '50px' }}/>
 			</p>
 			<button onClick={() => handleSelectCharacters('attacker')}>Random attackers</button>
 			<button onClick={() => handleSelectCharacters('defender')}>Random defenders</button>
 			<div>
-				{selectedCharacters.map((character: any, index: number) => (
-					<CharacterCard key={index} {...character} />
+				{selectedCharacters.map((character: CharacterCardProps, index: number) => (
+					<div>
+						<CharacterCard key={index} {...character} />
+						<label htmlFor="Testing">{}</label>
+					</div>
 				))}
 			</div>
 		</div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-type CharacterCardProps = {
+export type CharacterCardProps = {
 	name: string;
 	imageUrl: string;
 	weapons: {
