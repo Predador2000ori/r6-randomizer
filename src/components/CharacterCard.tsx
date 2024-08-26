@@ -19,8 +19,8 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
 	gadget
 }) => {
 	return (
-		<div>
-			<img src={imageUrl} alt={name} style={{ width: '150px', height: '150px' }} />
+		<div className='character-card'>
+			<img src={imageUrl} alt={name} className='opImg' />
 			<h2>{name}</h2>
 			<p>Primary Weapon: {weapons.primaryWeapon}</p>
 			<p>Secondary Weapon: {weapons.secondaryWeapon}</p>

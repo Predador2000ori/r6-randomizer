@@ -54,19 +54,18 @@ const CharacterSelectorSquad: React.FC = () => {
 	};
 
 	return (
-		<div>
+		<div className="character-selector">
 			<p>
 				<label htmlFor="Quantity" >Quantity:</label>
 				<br />
-				<input type="number" id="count" name="count" min="1" max="10" defaultValue="1" style={{ width: '50px' }}/>
+				<input type="number" id="count" name="count" min="1" max="10" defaultValue="1" />
 			</p>
 			<button onClick={() => handleSelectCharacters('attacker')}>Random attackers</button>
 			<button onClick={() => handleSelectCharacters('defender')}>Random defenders</button>
 			<div>
 				{selectedCharacters.map((character: CharacterCardProps, index: number) => (
-					<div>
-						<CharacterCard key={index} {...character} />
-						<label htmlFor="Testing">{}</label>
+					<div key={index} style={{gridColumn: `${(index % 3) + 1}`}}>
+						<CharacterCard {...character} />
 					</div>
 				))}
 			</div>

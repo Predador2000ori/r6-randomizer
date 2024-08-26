@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+body {
+	font-family: Arial, sans-serif;
+	margin: 2px;
+	padding: 0;
+	background-image: url('https://static-dm.ubisoft.com/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+	color: #b3b3b3cc;
+	text-align: center;
+	margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* character card container */
+.characterCardContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.character-selector label{
+	color: #acacac;
 }
 
-.App-link {
-  color: #61dafb;
+.character-selector input {
+	width: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.character-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background-color: rgba(212, 212, 212, 0.2);
+	padding: 20px;
+	text-align: center;
+}
+
+.character-card img {
+	padding-top: 2%;
+	width: 150px;
+	height: 150px;
+	border-radius: 25%;
+	background-color: #4d5c6b;
+}
+
+.character-card h2 {
+	font-size: 1.2em;
+	margin: 10px 0;
+	color: #fff;
+}
+
+.character-card p {
+	margin: 5px 0;
+	color: #ddd;
 }
