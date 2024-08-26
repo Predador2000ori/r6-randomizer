@@ -15,6 +15,7 @@ const CharacterSelectorSquad: React.FC = () => {
 		gadget: ["unknown"],
 	}]);
 
+	const [quantity, setQuantity] = useState<number>(1);
 	// Logic to random character selection
 	// Function to return random element from array
 	const getRandomElement = (array: any[]) => array[Math.floor(Math.random() * array.length)];
@@ -40,11 +41,6 @@ const CharacterSelectorSquad: React.FC = () => {
 
 	// Function to handle character selection
 	const handleSelectCharacters = (characterType: 'attacker' | 'defender') => {
-		// Sets the quantity of characters
-		let quantity: number = parseInt((document.getElementById("count") as HTMLInputElement).value);
-		quantity = quantity ? quantity : 1;		// case wher the user doesn't write anything
-		quantity = quantity < 0 ? quantity * -1 : quantity
-		quantity = quantity > 10 ? 10 : quantity
 		// Chose attackers or defenders
 		const characterList = characterType  === 'attacker' ? attackers : defenders;
 		// Sorts the characters and trims the array to the quantity
@@ -58,13 +54,13 @@ const CharacterSelectorSquad: React.FC = () => {
 			<p>
 				<label htmlFor="Quantity" >Quantity:</label>
 				<br />
-				<input type="number" id="count" name="count" min="1" max="10" defaultValue="1" />
+				<input type="number" id="Quantity" min="1" max="10" value={quantity} onChange={(e) => setQuantity(Math.max(1, Math.min(10, Math.abs(Number(e.target.value)))))}/>
 			</p>
 			<button onClick={() => handleSelectCharacters('attacker')}>Random attackers</button>
 			<button onClick={() => handleSelectCharacters('defender')}>Random defenders</button>
 			<div>
 				{selectedCharacters.map((character: CharacterCardProps, index: number) => (
-					<CharacterCard {...character} />
+					<CharacterCard key={index} {...character} /> // index can be replaced with an id when using a database
 				))}
 			</div>
 		</div>
