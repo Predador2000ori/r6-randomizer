@@ -34,6 +34,8 @@ const CharacterSelectorSquad: React.FC = () => {
 		// Sets the quantity of characters
 		let quantity: number = parseInt((document.getElementById("count") as HTMLInputElement).value);
 		quantity = quantity ? quantity : 1;		// case wher the user doesn't write anything
+		quantity = quantity < 0 ? quantity * -1 : quantity
+		quantity = quantity > 10 ? 10 : quantity
 		// Chose attackers or defenders
 		const characterList = characterType  === 'attacker' ? attackers : defenders;
 		// Sorts the characters and trims the array to the quantity
@@ -47,7 +49,7 @@ const CharacterSelectorSquad: React.FC = () => {
 			<p>
 				<label htmlFor="Quantity" >Quantity:</label>
 				<br />
-				<textarea name="Count" id="count" itemType="number"></textarea>
+				<input type="number" id="count" name="count" min="1"/>
 			</p>
 			<button onClick={() => handleSelectCharacters('attacker')}>Random attackers</button>
 			<button onClick={() => handleSelectCharacters('defender')}>Random defenders</button>
