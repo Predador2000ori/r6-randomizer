@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CharacterCard, {CharacterCardProps} from "./CharacterCard";
+import CharacterCard, { CharacterCardProps } from "./CharacterCard";
 import { attackers, defenders } from "../data/charactersData";
 
 const CharacterSelectorSquad: React.FC = () => {
@@ -26,7 +26,7 @@ const CharacterSelectorSquad: React.FC = () => {
 		return setted;
 	};
 	// Function to  set character loadout
-	const  randomLoadout = ( characters: any[]) => {
+	const randomLoadout = (characters: any[]) => {
 		const characterLoaded = characters.map(character => ({
 			...character,
 			weapons: {
@@ -42,7 +42,7 @@ const CharacterSelectorSquad: React.FC = () => {
 	// Function to handle character selection
 	const handleSelectCharacters = (characterType: 'attacker' | 'defender') => {
 		// Chose attackers or defenders
-		const characterList = characterType  === 'attacker' ? attackers : defenders;
+		const characterList = characterType === 'attacker' ? attackers : defenders;
 		// Sorts the characters and trims the array to the quantity
 		const uniqueCharacters = getUniqueRandomCharacters(characterList, quantity);
 		// Sets the state
@@ -54,7 +54,14 @@ const CharacterSelectorSquad: React.FC = () => {
 			<p>
 				<label htmlFor="Quantity" >Quantity:</label>
 				<br />
-				<input type="number" id="Quantity" min="1" max="10" value={quantity} onChange={(e) => setQuantity(Math.max(1, Math.min(10, Math.abs(Number(e.target.value)))))}/>
+				<input
+					type="number"
+					id="Quantity"
+					min="1"
+					max="10"
+					value={quantity}
+					onChange={(e) => setQuantity(Math.max(1, Math.min(10, Math.abs(Number(e.target.value)))))}
+				/>
 			</p>
 			<button onClick={() => handleSelectCharacters('attacker')}>Random attackers</button>
 			<button onClick={() => handleSelectCharacters('defender')}>Random defenders</button>
