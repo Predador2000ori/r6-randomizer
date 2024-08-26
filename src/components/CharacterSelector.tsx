@@ -64,9 +64,7 @@ const CharacterSelectorSquad: React.FC = () => {
 			<button onClick={() => handleSelectCharacters('defender')}>Random defenders</button>
 			<div>
 				{selectedCharacters.map((character: CharacterCardProps, index: number) => (
-					<div key={index} style={{gridColumn: `${(index % 3) + 1}`}}>
-						<CharacterCard {...character} />
-					</div>
+					<CharacterCard {...character} />
 				))}
 			</div>
 		</div>
