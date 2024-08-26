@@ -6,7 +6,7 @@ const CharacterSelectorSquad: React.FC = () => {
 	// selected character state
 	const [selectedCharacters, setSelectedCharacters] = useState<CharacterCardProps[]>([{
 		name: "unknown",
-		imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Image_is_needed_male.svg/220px-Image_is_needed_male.svg.png",
+		imageUrl: "https://via.placeholder.com/150",
 		weapons: {
 			primaryWeapon: ["unknown"],
 			secondaryWeapon: ["unknown"],
