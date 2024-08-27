@@ -23,22 +23,29 @@ h1 {
 }
 
 .character-selector label{
+	font-size: 1.8em;
 	color: #acacac;
 }
 
 .character-selector input {
+	margin-top: 10px;
 	width: 60px;
-
 }
 
 .random-attacker-button, .random-defender-button {
 	width: 150px;
 	height: 150px;
-	margin-inline: 20px;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+	margin-inline: 15px;
 	margin-bottom: -5px;
 	fill: #24262a;
 	background-color: #4d5c6b;
 	border-radius: 15%;
+}
+
+.random-attacker-button:hover, .random-defender-button:hover {
+    transform: scale(1.15);
 }
 
 .character-selector button {
@@ -50,7 +57,9 @@ h1 {
 
 /* CharacterCard.tsx */
 .character-card {
-	width: 45%;
+	width: 42%;
+	margin-inline: 5px;
+	margin-block: 10px;
 	max-width: 600px;
 	border: 1px solid #dddddd80;
 	border-radius: 15px;
@@ -76,4 +85,9 @@ h1 {
 .character-card p {
 	margin: 5px 0;
 	color: #ddd;
+}
+
+.character-card .ccKey {
+	color: #fff;
+	font-weight: bold;
 }

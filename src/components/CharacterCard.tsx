@@ -22,10 +22,14 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
 		<div className='character-card'>
 			<img src={imageUrl} alt={name} className='opImg' />
 			<h2>{name}</h2>
-			<p>Primary Weapon: {weapons.primaryWeapon}</p>
-			<p>Secondary Weapon: {weapons.secondaryWeapon}</p>
-			<p>Hability: {hability}</p>
-			<p>Gadget: {gadget}</p>
+			<p className='ccKey'>Primary Weapon: </p>
+			<p>{weapons.primaryWeapon}</p>
+			<p className='ccKey'>Secondary Weapon: </p>
+			<p>{weapons.secondaryWeapon}</p>
+			<p className='ccKey'>Hability: </p>
+			<p>{hability}</p>
+			<p className='ccKey'>Gadget: </p>
+			<p>{gadget}</p>
 		</div>
 	);
 };
