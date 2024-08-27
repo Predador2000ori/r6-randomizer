@@ -1,43 +1,5 @@
 export const attackers = [
 	{
-		name: "Iana",
-		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6deSi1vse5iJTkErFksrGq/75bf1038e9698b6b2be75aa0493b092d/Y5S1_BADGE_Iana_L.png",
-		weapons: {
-			primaryWeapon: [
-				"G36C",
-				"ARX200"
-			],
-			secondaryWeapon: [
-				"GONNE-6",
-				"MK1 9MM"
-			]
-		},
-		hability: ["Gemini replicator"],
-		gadget: [
-			"Smoke grenade",
-			"Impact EMP grenade"
-		]
-	},
-	{
-		name: "Brava",
-		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1JTzualMKZVGfdROg4XKh8/7989454e62b7972bfd88f09097cc148f/r6s-operators-badge-brava.png",
-		weapons: {
-			primaryWeapon: [
-				"PARA-308",
-				"CAMRS"
-			],
-			secondaryWeapon: [
-				"USP40",
-				"Super shorty"
-			],
-		},
-		hability: ["Kludge drone"],
-		gadget: [
-			"Smoke grenade",
-			"Claymore"
-		]
-	},
-	{
 		name: "Twitch",
 		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3YgCpOSM2R4SDgExstxm7P/ff84e6ac53bd9f690deee78870f9c23b/Y0R6_BADGE_Twitch_L.png",
 		weapons: {
@@ -92,29 +54,48 @@ export const attackers = [
 			"Hard breach charge",
 			"Smoke grenade"
 		]
+	},
+	{
+		name: "Iana",
+		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6deSi1vse5iJTkErFksrGq/75bf1038e9698b6b2be75aa0493b092d/Y5S1_BADGE_Iana_L.png",
+		weapons: {
+			primaryWeapon: [
+				"G36C",
+				"ARX200"
+			],
+			secondaryWeapon: [
+				"GONNE-6",
+				"MK1 9MM"
+			]
+		},
+		hability: ["Gemini replicator"],
+		gadget: [
+			"Smoke grenade",
+			"Impact EMP grenade"
+		]
+	},
+	{
+		name: "Brava",
+		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1JTzualMKZVGfdROg4XKh8/7989454e62b7972bfd88f09097cc148f/r6s-operators-badge-brava.png",
+		weapons: {
+			primaryWeapon: [
+				"PARA-308",
+				"CAMRS"
+			],
+			secondaryWeapon: [
+				"USP40",
+				"Super shorty"
+			],
+		},
+		hability: ["Kludge drone"],
+		gadget: [
+			"Smoke grenade",
+			"Claymore"
+		]
 	}
 ]
 
 export const defenders = [
-	{
-		name: "Echo",
-		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3MRqAdUybJ7GR9gX4wPAI4/992938a70a4e53b91478358634e77ca7/Y1S4_BADGE_Echo_L.png",
-		weapons: {
-			primaryWeapon: [
-				"MP5SD",
-				"Supernova"
-			],
-			secondaryWeapon: [
-				"Bearing 9",
-				"P229"
-			],
-		},
-		hability: ["Yokai"],
-		gadget: [
-			"Impact grenade",
-			"Deployable shield"
-		]
-	},
 	{
 		name: "Castle",
 		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/kzznLctjOsXJZAg0F2HPB/dea28fa008515d6ddaa0d2659f4dc253/Y0R6_BADGE_Castle_L.png",
@@ -136,21 +117,42 @@ export const defenders = [
 		]
 	},
 	{
-		name: "Azami",
-		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7KWTXHTk8rxLS5qtyX4Xu4/b51f8691b932fd2b83260ef3fbcd1154/r6s-operators-badge-azami.png",
+		name: "Pulse",
+		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/ChAeJzdmwxuvhZTrV81rK/8c16116f4c719a3df864df6639e2f52e/Y0R6_BADGE_Pulse_L.png",
 		weapons: {
 			primaryWeapon: [
-				"9X19SVN",
-				"ACS12"
+				"UMP45",
+				"M1014"
 			],
 			secondaryWeapon: [
-				"D-50"
+				"5.7 USG",
+				"M45 MEUSOC"
 			]
 		},
-		hability: ["kiba Barrier"],
+		hability: ["Grzmot mine"],
 		gadget: [
-			"Impact Grenade",
-			"Barbed Wire"
+			"Nitro Cell",
+			"Deployable shield",
+			"Observation blocker"
+		]
+	},
+	{
+		name: "Echo",
+		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3MRqAdUybJ7GR9gX4wPAI4/992938a70a4e53b91478358634e77ca7/Y1S4_BADGE_Echo_L.png",
+		weapons: {
+			primaryWeapon: [
+				"MP5SD",
+				"Supernova"
+			],
+			secondaryWeapon: [
+				"Bearing 9",
+				"P229"
+			],
+		},
+		hability: ["Yokai"],
+		gadget: [
+			"Impact grenade",
+			"Deployable shield"
 		]
 	},
 	{
@@ -173,23 +175,21 @@ export const defenders = [
 		]
 	},
 	{
-		name: "Pulse",
-		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/ChAeJzdmwxuvhZTrV81rK/8c16116f4c719a3df864df6639e2f52e/Y0R6_BADGE_Pulse_L.png",
+		name: "Azami",
+		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7KWTXHTk8rxLS5qtyX4Xu4/b51f8691b932fd2b83260ef3fbcd1154/r6s-operators-badge-azami.png",
 		weapons: {
 			primaryWeapon: [
-				"UMP45",
-				"M1014"
+				"9X19SVN",
+				"ACS12"
 			],
 			secondaryWeapon: [
-				"5.7 USG",
-				"M45 MEUSOC"
+				"D-50"
 			]
 		},
-		hability: ["Grzmot mine"],
+		hability: ["kiba Barrier"],
 		gadget: [
-			"Nitro Cell",
-			"Deployable shield",
-			"Observation blocker"
+			"Impact Grenade",
+			"Barbed Wire"
 		]
 	}
 ]
