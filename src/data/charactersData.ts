@@ -16,16 +16,9 @@ export const attackers = [
 			"Breach Charge",
 			"Claymore",
 			"Frag Grenade",
-			"Hard Breach Charge",
-			"Smoke Grenade",
-			"Stunt Grenade",
-			"Impact EMP Grenade"
+			"Hard Breach Charge"
 		],
 		gadget: [
-			"Breach Charge",
-			"Claymore",
-			"Frag Grenade",
-			"Hard Breach Charge",
 			"Smoke Grenade",
 			"Stunt Grenade",
 			"Impact EMP Grenade"
@@ -742,16 +735,9 @@ export const defenders = [
 			"Barbed Wire",
 			"Bulletpoof Camera",
 			"Deployable Shield",
-			"Observation Blocker",
-			"Impact Grenade",
-			"Nitro Cell",
-			"Proximity Alarm"
+			"Observation Blocker"
 		],
 		gadget: [
-			"Barbed Wire",
-			"Bulletpoof Camera",
-			"Deployable Shield",
-			"Observation Blocker",
 			"Impact Grenade",
 			"Nitro Cell",
 			"Proximity Alarm"
