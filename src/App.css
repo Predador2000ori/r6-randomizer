@@ -61,6 +61,12 @@ h1 {
     transform: scale(1.15);
 }
 
+.random-attacker-button:focus, .random-defender-button:focus {
+	outline: 2px solid #fff;
+	outline-offset: 4px;
+	transform: scale(1.1);
+}
+
 .character-selector button {
 	height: 100px;
 	width: 100px;
