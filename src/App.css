@@ -7,19 +7,31 @@ body {
 
 /* App.tsx */
 /* App tittle */
+.R6logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
 h1 {
-	color: #b3b3b3cc;
+	margin-top: -23px;
 	text-align: center;
-	margin-top: 20px;
+	color: rgba(230, 230, 230, 0.969);
 }
 
 /* CharacterSelector.tsx */
 .character-selector {
 	background-color: transparent;
+	margin-top: -20px;
 }
 
-.character-selector p {
+.character-selector div {
 	text-align: center;
+}
+
+.character-selector .quantdiv{
+	margin: 0 0 0 0;
 }
 
 .character-selector label{
@@ -28,8 +40,9 @@ h1 {
 }
 
 .character-selector input {
-	margin-top: 10px;
-	width: 60px;
+	margin: 10px 0 15px 15px;
+	color-scheme: dark;
+	width: 30px;
 }
 
 .random-attacker-button, .random-defender-button {
@@ -38,7 +51,7 @@ h1 {
 	cursor: pointer;
 	transition: transform 0.2s ease;
 	margin-inline: 15px;
-	margin-bottom: -5px;
+	margin-bottom: 5px;
 	fill: #24262a;
 	background-color: #4d5c6b;
 	border-radius: 15%;

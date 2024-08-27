@@ -6,7 +6,12 @@ import CharacterSelector from './components/CharacterSelector';
 const App: React.FC = () => {
 	return (
 		<div>
-			<h1>Rainbow Six Siege Character Randomizer</h1>
+			<img 
+				className="R6logo"
+				src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/DAwqy5hMljnxm7evA5ASN/e3266cda0a738a3abd486d5f57d732d7/r6s-logo-ww.png"
+				alt="R6Logo" 
+			/>
+			<h1>Randomizer</h1>
 			<CharacterSelector />
 		</div>
 	);

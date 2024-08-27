@@ -51,17 +51,16 @@ const CharacterSelectorSquad: React.FC = () => {
 
 	return (
 		<div className="character-selector">
-			<p>
+			<div className="quantdiv">
 				<label htmlFor="Quantity" >Quantity:</label>
-				<br />
 				<input
 					type="number"
 					id="Quantity"
 					value={quantity}
 					onChange={(e) => setQuantity(Math.max(1, Math.min(37, Math.abs(Number(e.target.value)))))}
 				/>
-			</p>
-			<p>
+			</div>
+			<div>
 				<svg 
 					className="random-attacker-button"
 					xmlns='http://www.w3.org/2000/svg'
@@ -74,7 +73,7 @@ const CharacterSelectorSquad: React.FC = () => {
 					onClick={() => handleSelectCharacters('defender')}
 					viewBox='0 0 30 30'><path d='M19.27,9.74l-4.25,2.17L10.73,9.7L8.15,28h13.7L19.27,9.74z M21.23,7.01V2h-2.88v1.73h-1.96V2h-2.78v1.73h-1.96V2H8.77v4.96l6.25,3.51L21.23,7.01z'/>
 				</svg>
-			</p>
+			</div>
 			<div>
 				{selectedCharacters.map((character: CharacterCardProps, index: number) => (
 					<CharacterCard key={index} {...character} /> // index can be replaced with an id when using a database
