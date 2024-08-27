@@ -5,18 +5,21 @@ body {
 	background-image: url('https://static-dm.ubisoft.com/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg');
 }
 
+/* App.tsx */
+/* App tittle */
 h1 {
 	color: #b3b3b3cc;
 	text-align: center;
 	margin-top: 20px;
 }
 
-/* character card container */
-.characterCardContainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px;
+/* CharacterSelector.tsx */
+.character-selector {
+	background-color: transparent;
+}
+
+.character-selector p {
+	text-align: center;
 }
 
 .character-selector label{
@@ -24,19 +27,40 @@ h1 {
 }
 
 .character-selector input {
-	width: 50px;
+	width: 60px;
+
 }
 
+.random-attacker-button, .random-defender-button {
+	width: 150px;
+	height: 150px;
+	margin-inline: 20px;
+	margin-bottom: -5px;
+	fill: #24262a;
+	background-color: #4d5c6b;
+	border-radius: 15%;
+}
+
+.character-selector button {
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	margin-bottom: 10px;
+}
+
+/* CharacterCard.tsx */
 .character-card {
-	border: 1px solid #ddd;
-	border-radius: 8px;
-	background-color: rgba(212, 212, 212, 0.2);
+	width: 45%;
+	max-width: 600px;
+	border: 1px solid #dddddd80;
+	border-radius: 15px;
+	background-color: #d4d4d425;
 	padding: 20px;
 	text-align: center;
 }
 
 .character-card img {
-	padding-top: 2%;
+	padding: 0.5%;
 	width: 150px;
 	height: 150px;
 	border-radius: 25%;
