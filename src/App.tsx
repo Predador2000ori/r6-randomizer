@@ -2,6 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import CharacterSelector from './components/CharacterSelector';
+import Footer from './components/Footer';
 
 const App: React.FC = () => {
 	return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
 			/>
 			<h1>Randomizer</h1>
 			<CharacterSelector />
+			<Footer />
 		</div>
 	);
 };
