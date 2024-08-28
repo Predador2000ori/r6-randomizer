@@ -5,6 +5,9 @@ body {
 	background-image: url('https://static-dm.ubisoft.com/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg');
 }
 
+.main-content {
+	padding-bottom: 80px;
+}
 /* App.tsx */
 /* App tittle */
 .R6logo {
@@ -136,8 +139,7 @@ h1 {
 
 	.character-card {
 		width: 42%;
-		margin-inline: 5px;
-		margin-block: 10px;
+		margin: 10px 0 0 5%;
 		min-width: 140px;
 		max-width: 600px;
 		border: 1px solid #dddddd80;
@@ -148,7 +150,7 @@ h1 {
 	}
 
 	.character-card img {
-		margin-top: 30px;
+		margin-top: -5px;
 		width: 112.5px;
 		height: 112.5px;
 		border-radius: 25%;
@@ -157,8 +159,8 @@ h1 {
 }
 
 .character-card h2 {
-	font-size: 1.2em;
-	margin: 10px 0;
+	font-size: 1.6em;
+	margin: 10px 0 -5px 0;
 	color: #fff;
 }
 

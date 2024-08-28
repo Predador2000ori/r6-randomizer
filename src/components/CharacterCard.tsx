@@ -23,9 +23,9 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
 			<img src={imageUrl} alt={name} className='opImg' />
 			<div className='info'>
 				<h2>{name}</h2>
-				<p className='ccKey'>Primary Weapon: </p>
+				<p className='ccKey'>Primary: </p>
 				<p>{weapons.primaryWeapon}</p>
-				<p className='ccKey'>Secondary Weapon: </p>
+				<p className='ccKey'>Secondary: </p>
 				<p>{weapons.secondaryWeapon}</p>
 				<p className='ccKey'>Hability: </p>
 				<p>{hability}</p>
