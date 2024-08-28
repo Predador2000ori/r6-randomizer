@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/r6-randomizer/static/css/main.4f7c0e7e.css",
+    "main.js": "/r6-randomizer/static/js/main.ee5eb542.js",
+    "static/js/453.1f48584e.chunk.js": "/r6-randomizer/static/js/453.1f48584e.chunk.js",
+    "index.html": "/r6-randomizer/index.html",
+    "main.4f7c0e7e.css.map": "/r6-randomizer/static/css/main.4f7c0e7e.css.map",
+    "main.ee5eb542.js.map": "/r6-randomizer/static/js/main.ee5eb542.js.map",
+    "453.1f48584e.chunk.js.map": "/r6-randomizer/static/js/453.1f48584e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f7c0e7e.css",
+    "static/js/main.ee5eb542.js"
+  ]
+}
