@@ -102,9 +102,9 @@ h1 {
 @media (min-width: 600px) {
 	/* character-card container */
 	.character-card-container {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-		gap: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
 		margin-top: 15px;
 		justify-content: center;
 	}
@@ -112,10 +112,8 @@ h1 {
 	.character-card {
 		display: flex;
 		width: 100%;
-		margin-inline: 5px;
-		margin-block: 10px;
+		min-width: 200px;
 		max-width: 350px;
-		min-width: 250px;
 		border: 1px solid #dddddd80;
 		border-radius: 15px;
 		background-color: #d4d4d425;
@@ -149,14 +147,14 @@ h1 {
 	}
 	/* CharacterCard.tsx */
 	.character-card-container {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(140px, 180px));
+		display: flex;
+		flex-wrap: wrap;
 		gap: 10px;
 		justify-content: center;
 	}
 
 	.character-card {
-		width: 42%;
+		width: 38%;
 		min-width: 140px;
 		max-width: 600px;
 		border: 1px solid #dddddd80;
@@ -164,6 +162,7 @@ h1 {
 		background-color: #d4d4d425;
 		padding: 20px;
 		text-align: center;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.44), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 	}
 
 	.character-card img {
