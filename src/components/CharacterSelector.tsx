@@ -59,6 +59,19 @@ const CharacterSelectorSquad: React.FC = () => {
 					id="Quantity"
 					value={quantity}
 					onChange={(e) => setQuantity(Math.max(0, Math.min(37, Math.abs(Number(e.target.value)))))}
+					onKeyDown={
+						(e) => {
+							if(e.key === 'ArrowUp'){
+								setQuantity(quantity + .5);
+							} else if (e.key === 'ArrowDown') {
+								setQuantity(quantity - .5);
+							} else if (e.key === 'Enter') {
+								handleSelectCharacters('attacker');
+							} else if (e.key === ' ') {
+								handleSelectCharacters('defender');
+							}
+						}
+					}
 					tabIndex={1}
 					aria-label="Quantity of characters num input"
 				/>
