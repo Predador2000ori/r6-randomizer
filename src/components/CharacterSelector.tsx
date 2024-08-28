@@ -96,7 +96,7 @@ const CharacterSelectorSquad: React.FC = () => {
 					</svg>
 				</div>
 			</div>
-			<div>
+			<div className="character-card-container">
 				{selectedCharacters.map((character: CharacterCardProps, index: number) => (
 					<CharacterCard key={index} {...character} /> // index can be replaced with an id when using a database
 				))}

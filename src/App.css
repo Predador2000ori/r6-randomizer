@@ -74,14 +74,27 @@ h1 {
 	margin-bottom: 10px;
 }
 
+
+
+/* CharacterCard.tsx */
+/* Styles for 600px and above */
 @media (min-width: 600px) {
-	/* CharacterCard.tsx */
+	/* character-card container */
+	.character-card-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+		gap: 5px;
+		margin-top: 15px;
+		justify-items: center;
+	}
+
 	.character-card {
 		display: flex;
 		width: 42%;
 		margin-inline: 5px;
 		margin-block: 10px;
-		max-width: 600px;
+		min-width: 250px;
+		max-width: 500px;
 		border: 1px solid #dddddd80;
 		border-radius: 15px;
 		background-color: #d4d4d425;
@@ -102,13 +115,19 @@ h1 {
 		flex: 2;
 	}
 }
-
+/* Styles for 600px and below */
 @media (max-width: 600px) {
-	/* CharacterCard.tsx */
+	.character-card-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(140px, 180px));
+		gap: 10px;
+	}
+
 	.character-card {
 		width: 42%;
 		margin-inline: 5px;
 		margin-block: 10px;
+		min-width: 140px;
 		max-width: 600px;
 		border: 1px solid #dddddd80;
 		border-radius: 15px;
@@ -119,8 +138,8 @@ h1 {
 
 	.character-card img {
 		margin-top: 30px;
-		width: 150px;
-		height: 150px;
+		width: 112.5px;
+		height: 112.5px;
 		border-radius: 25%;
 		background-color: #4d5c6b;
 	}
