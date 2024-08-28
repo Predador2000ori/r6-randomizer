@@ -21,6 +21,7 @@ const CharacterSelectorSquad: React.FC = () => {
 	const getRandomElement = (array: any[]) => array[Math.floor(Math.random() * array.length)];
 	// Function to randomly sorts character array
 	const getUniqueRandomCharacters = (characters: any[], count: number) => {
+		count= count === 0 ? 1 : count;
 		const shuffled = ([...characters].sort(() => 0.5 - Math.random())).slice(0, count);
 		const setted = randomLoadout(shuffled);
 		return setted;
@@ -57,7 +58,7 @@ const CharacterSelectorSquad: React.FC = () => {
 					type="number"
 					id="Quantity"
 					value={quantity}
-					onChange={(e) => setQuantity(Math.max(1, Math.min(37, Math.abs(Number(e.target.value)))))}
+					onChange={(e) => setQuantity(Math.max(0, Math.min(37, Math.abs(Number(e.target.value)))))}
 					tabIndex={1}
 					aria-label="Quantity of characters num input"
 				/>
