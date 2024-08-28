@@ -56,15 +56,15 @@ h1 {
 	color: #acacac;
 }
 
-.character-selector input {
-	margin: 10px 0 15px 15px;
-	color-scheme: dark;
-	font-size: x-large;
-	height: 30px;
-	width: 40px;
-}
+@media (max-width: 800px) {
+	.character-selector input {
+		margin: 10px 0 15px 15px;
+		color-scheme: dark;
+		font-size: x-large;
+		height: 30px;
+		width: 40px;
+	}
 
-@media (max-width: 600px) {
 	.random-attacker-button, .random-defender-button {
 		width: 100px;
 		height: 100px;
@@ -87,7 +87,15 @@ h1 {
 	}
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
+	.character-selector input {
+		margin: 10px 0 15px 15px;
+		color-scheme: dark;
+		font-size: large;
+		height: 25px;
+		width: 35px;
+	}
+
 	.random-attacker-button, .random-defender-button {
 		width: 150px;
 		height: 150px;
@@ -113,7 +121,7 @@ h1 {
 
 /* CharacterCard.tsx */
 /* Styles for 600px and above */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	/* character-card container */
 	.character-card-container {
 		display: flex;
@@ -150,15 +158,7 @@ h1 {
 	}
 }
 /* Styles for 600px and below */
-@media (max-width: 600px) {
-	/* CharacterSelector.tsx */
-	.character-selector input {
-		margin: 10px 0 15px 15px;
-		color-scheme: dark;
-		font-size: x-large;
-		height: 30px;
-		width: 40px;
-	}
+@media (max-width: 800px) {
 	/* CharacterCard.tsx */
 	.character-card-container {
 		display: flex;
@@ -205,7 +205,7 @@ h1 {
 }
 
 /* Footer.tsx */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	.footer {
 		background-color: #333;
 		color: white;
@@ -251,7 +251,7 @@ h1 {
 	  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	.footer {
 		background-color: #333;
 		color: white;
