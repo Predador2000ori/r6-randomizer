@@ -13,6 +13,10 @@ body {
 	margin: 2px;
 	padding: 0;
 	background-image: url('https://static-dm.ubisoft.com/siege/prod/7907369fa863844fc1ae432a9ca0e610.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 .main-content {
