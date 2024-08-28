@@ -95,6 +95,7 @@ h1 {
 		width: 42%;
 		margin-inline: 5px;
 		margin-block: 10px;
+		max-width: 500px;
 		min-width: 250px;
 		border: 1px solid #dddddd80;
 		border-radius: 15px;
