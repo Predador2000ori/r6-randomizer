@@ -87,7 +87,7 @@ h1 {
 	/* character-card container */
 	.character-card-container {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
 		gap: 5px;
 		margin-top: 15px;
 		justify-items: center;
