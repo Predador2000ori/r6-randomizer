@@ -814,7 +814,7 @@ export const defenders = [
 				"M45 MEUSOC"
 			]
 		},
-		hability: ["Grzmot mine"],
+		hability: ["Cardiac Sensor"],
 		gadget: [
 			"Nitro Cell",
 			"Deployable shield",
