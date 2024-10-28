@@ -343,7 +343,7 @@ export const attackers = [
 		},
 		hability: ["KS79 Lifeline"],
 		gadget: [
-			"Breach Charge",
+			"Hard Breach Charge",
 			"Claymore"
 		]
 	},
@@ -1184,7 +1184,8 @@ export const defenders = [
 		hability: ["Pest Launcher"],
 		gadget: [
 			"Barbed Wire",
-			"Nitro Cell"
+			"Nitro Cell",
+			"Impact Grenade"
 		],
 	},
 	{
@@ -1431,3 +1432,6 @@ export const defenders = [
 		],
 	},
 ]
+
+// Last update 25/10/2024
+// Version Y9S3.3
