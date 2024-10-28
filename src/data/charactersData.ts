@@ -524,7 +524,8 @@ export const attackers = [
 		hability: ["LV Explosive Lance"],
 		gadget: [
 			"Breach Charge",
-			"Claymore"
+			"Claymore",
+			"Smoke Grenade"
 		]
 	},
 	{
