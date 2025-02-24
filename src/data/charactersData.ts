@@ -231,7 +231,7 @@ export const attackers = [
 		hability: ["Skeleton key"],
 		gadget: [
 			"Stunt grenade",
-			"Hard breach charge"
+			"Claymore"
 		]
 	},
 	{
@@ -239,16 +239,15 @@ export const attackers = [
 		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4BTbmcs1EtoUbnpk5Am22Y/b7bd4d0708245c78b98455505c0d51a8/Y1S2_BADGE_Blackbeard_L.png",
 		weapons: {
 			primaryWeapon: [
+				"H.U.L.L. Adaptable shield"
+			],
+			secondaryWeapon: [
 				"MK17 CQB",
 				"SR-25"
 			],
-			secondaryWeapon: [
-				"D-50",
-			],
 		},
-		hability: ["RIFLE-SHIELD"],
+		hability: ["H.U.L.L. Adaptable shield"],
 		gadget: [
-			"Stunt grenade",
 			"Frag Grenade",
 			"Claymore"
 		]
@@ -688,7 +687,6 @@ export const attackers = [
 				"R4-C"
 			],
 			secondaryWeapon: [
-				"ITA12S",
 				"MK1 9MM"
 			],
 		},
@@ -879,7 +877,7 @@ export const defenders = [
 		},
 		hability: ["Entry Denial Device"],
 		gadget: [
-			"Nitro Cell",
+			"Barbed Wire",
 			"Bulletproof camera"
 		],
 	},
@@ -1313,7 +1311,8 @@ export const defenders = [
 			],
 			secondaryWeapon: [
 				"Bearing 9",
-				"Q-929"
+				"Q-929",
+				"ITA12S"
 			],
 		},
 		hability: ["Kóna Station"],
@@ -1434,5 +1433,5 @@ export const defenders = [
 	},
 ]
 
-// Last update 25/10/2024
-// Version Y9S3.3
+// Last update 24/02/2025
+// Version Y9S4.2
