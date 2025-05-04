@@ -714,6 +714,25 @@ export const attackers = [
 			"Hard Breach Charge"
 		]
 	},
+	{
+		name: "Raurora",
+		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/T2BrSyMgBBSjM7rs8T53b/0f8d6842d4440fc06d450789c273381b/r6s-operators-badge-rauora.png",
+		weapons: {
+			primaryWeapon: [
+				"417",
+				"M249"
+			],
+			secondaryWeapon: [
+				"Reaper MK2",
+				"GSH-18"
+			],
+		},
+		hability: ["D.O.M. Panel Launcher"],
+		gadget: [
+			"Smoke grenade",
+			"Breach charge"
+		]
+	},
 ]
 
 export const defenders = [
@@ -1433,5 +1452,5 @@ export const defenders = [
 	},
 ]
 
-// Last update 24/02/2025
-// Version Y9S4.2
+// Last update 03/05/2025
+// Version Y10S1

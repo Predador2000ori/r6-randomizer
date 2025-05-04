@@ -6,7 +6,7 @@ const CharacterSelectorSquad: React.FC = () => {
 	// selected character state
 	const [selectedCharacters, setSelectedCharacters] = useState<CharacterCardProps[]>([{
 		name: "unknown",
-		imageUrl: "https://via.placeholder.com/150",
+		imageUrl: "https://fakeimg.pl/150x150/4d5c6b/24262a?text=Character&font=bebas", //betterplaceholder.com
 		weapons: {
 			primaryWeapon: ["unknown"],
 			secondaryWeapon: ["unknown"],
@@ -58,7 +58,7 @@ const CharacterSelectorSquad: React.FC = () => {
 					type="number"
 					id="Quantity"
 					value={quantity}
-					onChange={(e) => setQuantity(Math.max(0, Math.min(37, Math.abs(Number(e.target.value)))))}
+					onChange={(e) => setQuantity(Math.max(0, Math.min(38, Math.abs(Number(e.target.value)))))}
 					onKeyDown={
 						(e) => {
 							if(e.key === 'ArrowUp'){
