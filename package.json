@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-	"start53": "PORT=53 react-scripts start",
+    "start53": "PORT=53 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@types/css": "^0.0.38",
     "gh-pages": "^6.1.1"
   }
 }
