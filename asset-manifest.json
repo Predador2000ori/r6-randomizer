@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/r6-randomizer/static/css/main.ee40cca4.css",
-    "main.js": "/r6-randomizer/static/js/main.946111df.js",
-    "static/js/453.1f48584e.chunk.js": "/r6-randomizer/static/js/453.1f48584e.chunk.js",
+    "main.css": "/r6-randomizer/static/css/main.892ef320.css",
+    "main.js": "/r6-randomizer/static/js/main.367ec513.js",
+    "static/js/453.b4fab15c.chunk.js": "/r6-randomizer/static/js/453.b4fab15c.chunk.js",
     "index.html": "/r6-randomizer/index.html",
-    "main.ee40cca4.css.map": "/r6-randomizer/static/css/main.ee40cca4.css.map",
-    "main.946111df.js.map": "/r6-randomizer/static/js/main.946111df.js.map",
-    "453.1f48584e.chunk.js.map": "/r6-randomizer/static/js/453.1f48584e.chunk.js.map"
+    "main.892ef320.css.map": "/r6-randomizer/static/css/main.892ef320.css.map",
+    "main.367ec513.js.map": "/r6-randomizer/static/js/main.367ec513.js.map",
+    "453.b4fab15c.chunk.js.map": "/r6-randomizer/static/js/453.b4fab15c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee40cca4.css",
-    "static/js/main.946111df.js"
+    "static/css/main.892ef320.css",
+    "static/js/main.367ec513.js"
   ]
 }
