@@ -1511,5 +1511,5 @@ export const defenders = [
 	},
 ]
 
-// Last update 03/05/2025
+// Last update 22/03/2026
 // Version Y11S1
