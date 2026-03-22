@@ -776,7 +776,8 @@ export const defenders = [
 		weapons: {
 			primaryWeapon: [
 				"Commando 9",
-				"M870"
+				"M870",
+				"TCSG12"
 			],
 			secondaryWeapon: [
 				"C75 AUTO",
@@ -863,7 +864,8 @@ export const defenders = [
 			],
 			secondaryWeapon: [
 				"5.7 USG",
-				"M45 MEUSOC"
+				"M45 MEUSOC",
+				"REAPER MK2"
 			]
 		},
 		hability: ["Cardiac Sensor"],
@@ -904,8 +906,9 @@ export const defenders = [
 				"SG-CQB"
 			],
 			secondaryWeapon: [
+				"REAPER MK2",
 				"P9",
-				"LFP586",
+				"LFP586"
 			],
 		},
 		hability: ["Armor Pack"],
@@ -1231,6 +1234,7 @@ export const defenders = [
 			],
 			secondaryWeapon: [
 				"SPD 9MM",
+				"Super shorty"
 			],
 		},
 		hability: ["Pest Launcher"],
@@ -1288,6 +1292,7 @@ export const defenders = [
 				"MP5K"
 			],
 			secondaryWeapon: [
+				"Super shorty",
 				"P12",
 				"Keratos .357"
 			],
@@ -1308,6 +1313,7 @@ export const defenders = [
 			],
 			secondaryWeapon: [
 				"Bailiff 410",
+				"REAPER MK2",
 				"USP40"
 			],
 		},
@@ -1506,4 +1512,4 @@ export const defenders = [
 ]
 
 // Last update 03/05/2025
-// Version Y10S1
+// Version Y11S1
