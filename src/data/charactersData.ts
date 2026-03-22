@@ -5,7 +5,8 @@ export const attackers = [
 		weapons: {
 			primaryWeapon: [
 				"M4",
-				"M249"
+				"M249",
+				"SR-25"
 			],
 			secondaryWeapon: [
 				"5.7 USG",
@@ -34,6 +35,7 @@ export const attackers = [
 			],
 			secondaryWeapon: [
 				"P226 MK 25",
+				"REAPER MK2",
 			],
 		},
 		hability: ["Breaching Hammer"],
@@ -50,13 +52,14 @@ export const attackers = [
 			primaryWeapon: [
 				"AR33",
 				"L85A2",
-				"M590A1"
+				"M590A1",
+				"PMR90A2",
 			],
 			secondaryWeapon: [
 				"P226 MK 25",
 			],
 		},
-		hability: ["EMP Grenade"],
+		hability: ["E.G.S. Disruptor (Electronic Gear Scanner Disruptor)"],
 		gadget: [
 			"Breach Charge",
 			"Claymore",
@@ -91,6 +94,8 @@ export const attackers = [
 			],
 			secondaryWeapon: [
 				"5.7 USG",
+				"M45 MEUSOC",
+				"ITA12S"
 			],
 		},
 		hability: ["Exothermic Charge"],
@@ -242,8 +247,6 @@ export const attackers = [
 				"H.U.L.L. Adaptable shield"
 			],
 			secondaryWeapon: [
-				"MK17 CQB",
-				"SR-25"
 			],
 		},
 		hability: ["H.U.L.L. Adaptable shield"],
@@ -258,11 +261,12 @@ export const attackers = [
 		weapons: {
 			primaryWeapon: [
 				"M249",
-				"PARA-308"
+				"PARA-308",
+				"PMR90A2",
 			],
 			secondaryWeapon: [
 				"GONNE-6",
-				"PRB92"
+				"PRB92",
 			],
 		},
 		hability: ["Tactical Crossbow"],
@@ -277,18 +281,20 @@ export const attackers = [
 		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1TSA4pMR58vgfrEai69REl/f82b1eba6694b4aa77259d3d0fe8cc08/Y1S4_BADGE_Hibana_L.png",
 		weapons: {
 			primaryWeapon: [
+				"Supernova",
 				"TYPE-89",
-				"Supernova"
+				"PMR90A2",
 			],
 			secondaryWeapon: [
-				"P229",
 				"Bearing 9",
+				"P229",
 			],
 		},
 		hability: ["X-Kairos"],
 		gadget: [
 			"Stunt grenade",
-			"Breach Charge"
+			"Breach Charge",
+			"Claymore",
 		]
 	},
 	{
@@ -297,7 +303,8 @@ export const attackers = [
 		weapons: {
 			primaryWeapon: [
 				"C7E",
-				"PDW9"
+				"PDW9",
+				"ITA12L",
 			],
 			secondaryWeapon: [
 				"USP40",
@@ -319,7 +326,8 @@ export const attackers = [
 				"SIX12"
 			],
 			secondaryWeapon: [
-				"Q-929"
+				"Q-929",
+				"REAPER MK2",
 			],
 		},
 		hability: ["Candela"],
@@ -342,8 +350,8 @@ export const attackers = [
 		},
 		hability: ["KS79 Lifeline"],
 		gadget: [
+			"Claymore",
 			"Hard Breach Charge",
-			"Claymore"
 		]
 	},
 	{
@@ -415,17 +423,20 @@ export const attackers = [
 		weapons: {
 			primaryWeapon: [
 				"AR-15.50",
-				"M4"
+				"M4",
 			],
 			secondaryWeapon: [
-				"1911 TACOPS"
+				"1911 TACOPS",
+				"C75 AUTO",
+				"REAPER MK2",
 			],
 		},
 		hability: ["Breaching Torch"],
 		gadget: [
 			"Claymore",
 			"Smoke Grenade",
-			"Stunt Grenade"
+			"Stunt Grenade",
+			"Frag Grenade",
 		]
 	},
 	{
@@ -434,17 +445,17 @@ export const attackers = [
 		weapons: {
 			primaryWeapon: [
 				"AK-74M",
-				"ARX200"
+				"ARX200",
 			],
 			secondaryWeapon: [
 				"PRB92",
-				".44 MAG SEMI-AUTO"
+				".44 MAG SEMI-AUTO",
 			],
 		},
 		hability: ["Airjab Launcher"],
 		gadget: [
 			"Breach Charge",
-			"Stunt Grenade"
+			"Stunt Grenade",
 		]
 	},
 	{
@@ -468,16 +479,17 @@ export const attackers = [
 		]
 	},
 	{
-		name: "NØKK",
+		name: "`NØKK`",
 		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2qfSHHTdCRVhx9EWycVDNr/9e361e73fb91e571f7470de21edf5c7a/Y4S2_BADGE_Nokk_L.png",
 		weapons: {
 			primaryWeapon: [
 				"FMG-9",
-				"SIX12 SD"
+				"SIX12 SD",
+				"PMR90A2",
 			],
 			secondaryWeapon: [
 				"5.7 USG",
-				"D-50"
+				"D-50",
 			],
 		},
 		hability: ["HEL Presence Reduction"],
@@ -512,7 +524,7 @@ export const attackers = [
 		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6r1hk1EunQirF1IcY4TG8T/0d3fbb7508a7747fd51249b1b8ea9779/Y4S4_BADGE_Kali_L.png",
 		weapons: {
 			primaryWeapon: [
-				"CSRX 300",
+				"CSRX 300"
 			],
 			secondaryWeapon: [
 				"SPSMG9",
@@ -542,8 +554,8 @@ export const attackers = [
 		},
 		hability: ["Gemini replicator"],
 		gadget: [
-			"Smoke grenade",
-			"Impact EMP grenade"
+			"Impact EMP grenade",
+			"Smoke grenade"
 		]
 	},
 	{
@@ -589,7 +601,8 @@ export const attackers = [
 		weapons: {
 			primaryWeapon: [
 				"AR33",
-				"SR-25"
+				"SR-25",
+				"T-95 LSW"
 			],
 			secondaryWeapon: [
 				"GSH-18"
@@ -731,6 +744,27 @@ export const attackers = [
 		gadget: [
 			"Smoke grenade",
 			"Breach charge"
+		]
+	},
+	{
+		name: "Solid Snake",
+		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7l8uzV1767cot7GpTcnK7t/9be16729f34b76e97dbcbbd0a81bd74c/r6s-operators-badge-solidsnake.png",
+		weapons: {
+			primaryWeapon: [
+				"F2",
+				"PMR90A2"
+			],
+			secondaryWeapon: [
+				"TACIT .45"
+			],
+		},
+		hability: ["Radar Soliton Mk. III"],
+		gadget: [
+			"Frag Grenade",
+			"Stunt Grenade",
+			"Impact EMP Grenade",
+			"Smoke Grenade",
+			"Breach Charge"
 		]
 	},
 ]
@@ -1448,6 +1482,25 @@ export const defenders = [
 		gadget: [
 			"Impact Grenade",
 			"Proximity Alarm"
+		],
+	},
+	{
+		name: "Denari",
+		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/17XNHqqrkLQ7lYFqciEwmP/21d50fb6c296d26a47f8dd84dd19298b/r6s-operators-badge-denari.png",
+		weapons: {
+			primaryWeapon: [
+				"Scorpion EVO 3 A1",
+				"FMG-9",
+			],
+			secondaryWeapon: [
+				"GLAIVE-12",
+				"P226 MK 25",
+			],
+		},
+		hability: ["CONECTOR T.R.I.P."],
+		gadget: [
+			"Observation Blocker",
+			"Deployable Shield"
 		],
 	},
 ]

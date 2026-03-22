@@ -58,7 +58,7 @@ const CharacterSelectorSquad: React.FC = () => {
 					type="number"
 					id="Quantity"
 					value={quantity}
-					onChange={(e) => setQuantity(Math.max(0, Math.min(38, Math.abs(Number(e.target.value)))))}
+					onChange={(e) => setQuantity(Math.max(0, Math.min(39, Math.abs(Number(e.target.value)))))}
 					onKeyDown={
 						(e) => {
 							if(e.key === 'ArrowUp'){
