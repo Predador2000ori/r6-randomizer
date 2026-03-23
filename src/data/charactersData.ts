@@ -244,7 +244,8 @@ export const attackers = [
 		imageUrl: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4BTbmcs1EtoUbnpk5Am22Y/b7bd4d0708245c78b98455505c0d51a8/Y1S2_BADGE_Blackbeard_L.png",
 		weapons: {
 			primaryWeapon: [
-				"H.U.L.L. Adaptable shield"
+				"MK17 CQB",
+				"SR-25"
 			],
 			secondaryWeapon: [
 			],
